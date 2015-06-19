@@ -35,23 +35,23 @@ the file tidyset.txt is the resulting dataset that contains the averaged smartph
 
 ### Explanation R Scripts to create the tidy dataset
 
-1 A subdirectory "./smartphones" of the current working directory is created 
-2 the zipfile is downloaded from the given url to the newly created subdirectory
-3 the zipfile is unzipped
-4 Not alle files are needed nor extracted the following of the unzipped files are loaded into dataframes:
+1. A subdirectory "./smartphones" of the current working directory is created 
+2. the zipfile is downloaded from the given url to the newly created subdirectory
+3. the zipfile is unzipped
+4. Not alle files are needed nor extracted the following of the unzipped files are loaded into dataframes:
 	features
 	X_train
 	subject_train
 	X_test
 	subject_test
-5 using pattern filtering, the features needed (mean and std variables) are selected and loaded
-6 X_train and X_test datasets are merged to the dataframe "totalfeatset" while selecting the features needed using the vector created in 5
+5. using pattern filtering, the features needed (mean and std variables) are selected and loaded
+6. X_train and X_test datasets are merged to the dataframe "totalfeatset" while selecting the features needed using the vector created in 5
   only the number of rows available in the subject_ files are loaded, so these can be combined in step 9
-7 the columnames are set to the featurenames using the vector created in 5
-8 the subject_train and subject_test are merged
-9 these subjects are added as last column (using cbind) to the totalfeatset
-10 the means of all variables are calculated in a loop per subject:
+7. the columnames are set to the featurenames using the vector created in 5
+8. the subject_train and subject_test are merged
+9. these subjects are added as last column (using cbind) to the totalfeatset
+10. the means of all variables are calculated in a loop per subject:
   for each subject the rows are filtered and averaged using the apply function
   the resulting average set is added each time as a new row to a matrix
-11 the matrix is saved as file tidyset.txt
+11. the matrix is saved as file tidyset.txt
 
