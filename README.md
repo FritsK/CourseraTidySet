@@ -27,10 +27,10 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 
 ### Explanation files in this Assesment repository
 
-the file run_analysis.R contains all the R commands that download, extract and modify the data
-the file Codebook.MD indicates all the variables and summaries that are calculated, along with units, and other relevant information
-the file readme.MD (this file) explains the steps that are performed to create the tidy dataset file (tidyset.txt)
-the file tidyset.txt is the resulting dataset that contains the averaged smartphone data per mean or std variable per subject
+1. the file run_analysis.R contains all the R commands that download, extract and modify the data
+2. the file Codebook.MD indicates all the variables and summaries that are calculated, along with units, and other relevant information
+3. the file readme.MD (this file) explains the steps that are performed to create the tidy dataset file (tidyset.txt)
+4. the file tidyset.txt is the resulting dataset that contains the averaged smartphone data per mean or std variable per subject
 
 
 ### Explanation R Scripts to create the tidy dataset
